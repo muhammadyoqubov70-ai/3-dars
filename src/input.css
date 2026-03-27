@@ -1,1 +1,22 @@
 @import "tailwindcss";
+
+@theme {
+  /* Moviy ranglar (Blue Shades) */
+  --color-brand-blue-500: #4477de;
+  --color-brand-blue-400: #5585e5;
+  --color-brand-blue-300: #7199eb;
+  --color-brand-blue-200: #a1bcf2;
+
+  /* Kulrang va Neytral ranglar (Grays & Neutrals) */
+  --color-app-gray-50: #f5f5f5;
+  --color-app-gray-200: #c2c2c2;
+  --color-app-gray-500: #858585;
+  --color-app-white: #ffffff;
+
+  /* To'q ranglar (Darks) */
+  --color-app-black: #0a0a0a;
+  --color-app-dark-gray: #1a1a1a;
+
+  /* Siz qo'shgan mint rangi */
+  --color-mint-500: oklch(0.72 0.11 178);
+}
