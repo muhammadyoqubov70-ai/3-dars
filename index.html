@@ -1,0 +1,552 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Elecar</title>
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
+    <style>
+      .scrollbar-hide::-webkit-scrollbar {
+        display: none;
+      }
+    </style>
+  </head>
+
+  <body class="bg-black text-white overflow-x-hidden">
+    <!-- NAVBAR -->
+    <header class="flex justify-between items-center px-6 md:px-16 py-6">
+      <h1 class="text-lg">Elecar</h1>
+
+      <nav class="hidden md:flex gap-10 text-sm">
+        <a class="text-blue-500">Home</a>
+        <a class="opacity-70">About</a>
+        <a class="opacity-70">Popular</a>
+        <a class="opacity-70">Featured</a>
+      </nav>
+
+      <button id="menuBtn" class="md:hidden text-2xl">☰</button>
+    </header>
+
+    <div id="mobileMenu" class="hidden flex-col items-center gap-4 py-4">
+      <a>Home</a>
+      <a>About</a>
+      <a>Popular</a>
+      <a>Featured</a>
+    </div>
+
+    <!-- HERO -->
+    <section class="text-center mt-10 px-4">
+      <h1 class="text-3xl md:text-5xl font-semibold">Choose The Best Car</h1>
+
+      <p class="mt-4">Porsche Mission E</p>
+
+      <p class="text-gray-400 text-sm flex justify-center gap-1 items-center">
+        <i class="fa-solid fa-bolt text-blue-500"></i>
+        Electric car
+      </p>
+
+      <img src="./imgs/hero.png" class="mx-auto mt-10 w-[300px] md:w-[520px]" />
+
+      <!-- STATS -->
+      <div class="flex justify-center gap-10 mt-10 text-center">
+        <div>
+          <i class="fa-solid fa-temperature-three-quarters"></i>
+          <p class="text-xl">24°</p>
+          <p class="text-xs text-gray-500">TEMPERATURE</p>
+        </div>
+
+        <div>
+          <i class="fa-solid fa-gauge"></i>
+          <p class="text-xl">873</p>
+          <p class="text-xs text-gray-500">MILEAGE</p>
+        </div>
+
+        <div>
+          <i class="fa-solid fa-battery-three-quarters"></i>
+          <p class="text-xl">94%</p>
+          <p class="text-xs text-gray-500">BATTERY</p>
+        </div>
+      </div>
+
+      <button
+        class="mt-10 w-24 h-24 border-2 border-green-400 rounded-full text-green-400"
+      >
+        START
+      </button>
+    </section>
+
+    <!-- ABOUT -->
+    <section
+      class="grid md:grid-cols-2 gap-10 px-6 md:px-24 mt-20 items-center"
+    >
+      <div class="relative">
+        <img src="./imgs/img-saloj2.png" class="rounded-2xl" />
+
+        <div
+          class="absolute bottom-4 right-4 bg-gray-900/80 px-4 py-2 rounded-xl"
+        >
+          <p>2.500+</p>
+          <p class="text-xs text-gray-400">Supercharges</p>
+        </div>
+      </div>
+
+      <div>
+        <h2 class="text-3xl font-semibold">Machines With Future Technology</h2>
+
+        <p class="mt-4 text-gray-400 text-sm">
+          See the future with high-performance electric cars.
+        </p>
+
+        <button class="mt-6 px-6 py-2 bg-blue-600 rounded">Know more</button>
+      </div>
+    </section>
+
+    <!-- CARDS -->
+    <section class="py-20">
+      <h2 class="text-center text-3xl mb-12">Choose Your Electric Car</h2>
+
+      <div
+        class="flex gap-6 overflow-x-auto px-6 scrollbar-hide md:grid md:grid-cols-3 md:max-w-5xl md:mx-auto"
+      >
+        <!-- CARD 1 -->
+        <div
+          class="w-[200px] md:w-[228px] h-[270px] md:h-[303px] bg-[#111] p-4 rounded-2xl flex flex-col justify-between shrink-0 bg-gradient-to-b from-[rgba(55,74,109,0.5)] to-transparent"
+        >
+          <div>
+            <h3 class="text-sm font-semibold">Porsche</h3>
+            <p class="text-gray-400 text-xs">Turbo S</p>
+
+            <img
+              src="./imgs/brand1.png"
+              class="my-3 h-[100px] object-contain"
+            />
+
+            <div class="flex gap-3 text-xs">
+              <span><i class="fa-regular fa-clock text-blue-500"></i> 3.7</span>
+              <span
+                ><i class="fa-solid fa-gauge-high text-blue-500"></i> 356</span
+              >
+            </div>
+
+            <p class="text-gray-400 text-xs mt-1">
+              <i class="fa-solid fa-bolt text-blue-500"></i> Electric
+            </p>
+          </div>
+
+          <div class="flex justify-between items-center">
+            <span class="text-sm">$175,900</span>
+            <button
+              class="bg-blue-600 w-8 h-8 rounded flex items-center justify-center"
+            >
+              <i class="fa-solid fa-bag-shopping text-xs"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- CARD 2 -->
+        <div
+          class="w-[200px] md:w-[228px] h-[270px] md:h-[303px] bg-[#111] p-4 rounded-2xl flex flex-col justify-between shrink-0 bg-gradient-to-b from-[rgba(55,74,109,0.5)] to-transparent"
+        >
+          <div>
+            <h3 class="text-sm font-semibold">Porsche</h3>
+            <p class="text-gray-400 text-xs">Taycan</p>
+
+            <img
+              src="./imgs/brand2.png"
+              class="my-3 h-[100px] object-contain"
+            />
+
+            <div class="flex gap-3 text-xs">
+              <span><i class="fa-regular fa-clock text-blue-500"></i> 3.7</span>
+              <span
+                ><i class="fa-solid fa-gauge-high text-blue-500"></i> 356</span
+              >
+            </div>
+
+            <p class="text-gray-400 text-xs mt-1">
+              <i class="fa-solid fa-bolt text-blue-500"></i> Electric
+            </p>
+          </div>
+
+          <div class="flex justify-between items-center">
+            <span class="text-sm">$114,900</span>
+            <button
+              class="bg-blue-600 w-8 h-8 rounded flex items-center justify-center"
+            >
+              <i class="fa-solid fa-bag-shopping text-xs"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- CARD 3 -->
+        <div
+          class="w-[200px] md:w-[228px] h-[270px] md:h-[303px] bg-[#111] p-4 rounded-2xl flex flex-col justify-between shrink-0 bg-gradient-to-b from-[rgba(55,74,109,0.5)] to-transparent"
+        >
+          <div>
+            <h3 class="text-sm font-semibold">Porsche</h3>
+            <p class="text-gray-400 text-xs">Turbo S Cross</p>
+
+            <img
+              src="./imgs/brand3.png"
+              class="my-3 h-[100px] object-contain"
+            />
+
+            <div class="flex gap-3 text-xs">
+              <span><i class="fa-regular fa-clock text-blue-500"></i> 3.7</span>
+              <span
+                ><i class="fa-solid fa-gauge-high text-blue-500"></i> 356</span
+              >
+            </div>
+
+            <p class="text-gray-400 text-xs mt-1">
+              <i class="fa-solid fa-bolt text-blue-500"></i> Electric
+            </p>
+          </div>
+
+          <div class="flex justify-between items-center">
+            <span class="text-sm">$175,900</span>
+            <button
+              class="bg-blue-600 w-8 h-8 rounded flex items-center justify-center"
+            >
+              <i class="fa-solid fa-bag-shopping text-xs"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="text-center py-24 relative overflow-hidden">
+      <h2 class="text-2xl md:text-3xl mb-16 font-semibold">More Features</h2>
+
+      <!-- GLOW BACKGROUND -->
+      <div
+        class="absolute inset-0 flex justify-center items-center pointer-events-none"
+      >
+        <div
+          class="w-[300px] h-[300px] md:w-[500px] md:h-[500px] bg-blue-600/20 blur-[120px] rounded-full"
+        ></div>
+      </div>
+
+      <!-- CAR WRAPPER -->
+      <div class="relative w-fit mx-auto">
+        <!-- CAR IMAGE -->
+        <img
+          src="./imgs/featured-car.png"
+          class="w-[260px] md:w-[354px] object-contain relative z-10"
+        />
+
+        <!-- 800V (TOP RIGHT) -->
+        <div class="absolute top-[15%] right-[-20px] md:right-[-40px] z-20">
+          <div
+            class="bg-black/70 backdrop-blur-md px-4 py-2 rounded-xl border border-white/10 text-sm shadow-lg"
+          >
+            <p class="font-semibold">800V</p>
+            <p class="text-[10px] text-gray-400">Turbo Charging</p>
+          </div>
+        </div>
+
+        <!-- 350 KM (LEFT) -->
+        <div
+          class="absolute top-[50%] left-[-30px] md:left-[-50px] -translate-y-1/2 z-20"
+        >
+          <div
+            class="bg-black/70 backdrop-blur-md px-4 py-2 rounded-xl border border-white/10 text-sm shadow-lg"
+          >
+            <p class="font-semibold">350km</p>
+            <p class="text-[10px] text-gray-400">Range</p>
+          </div>
+        </div>
+
+        <!-- 480 KM (BOTTOM RIGHT) -->
+        <div class="absolute bottom-[10%] right-[-10px] md:right-[-30px] z-20">
+          <div
+            class="bg-black/70 backdrop-blur-md px-4 py-2 rounded-xl border border-white/10 text-sm shadow-lg"
+          >
+            <p class="font-semibold">480km</p>
+            <p class="text-[10px] text-gray-400">Mileage</p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="absolute top-[50%] left-[2%] md:left-[5%] -translate-y-1/2 z-20">
+        <div
+          class="bg-black/70 backdrop-blur-md px-3 py-2 md:px-4 md:py-2 rounded-xl border border-white/10 text-[10px] md:text-sm shadow-lg">
+          <p class="font-semibold">350km</p>
+          <p class="text-[8px] md:text-[10px] text-gray-400">Range</p>
+        </div>
+      </div>
+
+
+      <div class="absolute bottom-[12%] right-[8%] md:right-[10%] z-20">
+        <div
+          class="bg-black/70 backdrop-blur-md px-3 py-2 md:px-4 md:py-2 rounded-xl border border-white/10 text-[10px] md:text-sm shadow-lg">
+          <p class="font-semibold">480km</p>
+          <p class="text-[8px] md:text-[10px] text-gray-400">Mileage</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <section class="text-center  py-24 relative overflow-hidden">
+    <div>
+      <h2 class="text-2xl md:text-3xl mb-16 font-semibold">Featured Luxury Cars</h2>
+      <div class="flex items-center gap-8  justify-center mb-18">
+
+        <button class="w-12 h-12 bg-gray-800 rounded-xl flex items-center justify-center hover:bg-blue-500">
+          All
+        </button>
+
+        <button class="w-12 h-12 bg-gray-800 rounded-xl flex items-center justify-center hover:bg-blue-500">
+          <img src="./imgs/svglogo.svg" alt="">
+        </button>
+
+        <button class="w-12 h-12 bg-gray-800 rounded-xl flex items-center justify-center hover:bg-blue-500">
+          <img src="./imgs/svglgog2.png" alt="">
+        </button>
+
+        <button class="w-12 h-12 bg-gray-800 rounded-xl flex items-center justify-center hover:bg-blue-500">
+          <img src="./imgs/svglogo.svg" alt="">
+        </button>
+
+      </div>
+
+    </div>
+    <div
+      class="mt-[72px] flex flex-wrap justify-center gap-[72px] md:grid md:grid-cols-3 md:gap-[72px] md:max-w-5xl md:mx-auto">
+
+      <div class="w-[248px] p-5 rounded-2xl 
+bg-gradient-to-b from-[#0b0f1a] to-[#111827] 
+border border-blue-500/30 relative text-white">
+
+
+        <h3 class="text-[24px] text-start font-semibold leading-tight">Tesla</h3>
+        <p class="text-[16px] text-start text-gray-400">Model X</p>
+
+
+        <img src="./imgs/featured1.svg" class="my-4 h-[120px] mx-auto object-contain" />
+
+
+        <div class="flex justify-between items-center mt-4">
+          <span class="text-[16px] font-semibold">$98,900</span>
+
+          <button
+            class="bg-blue-600 w-10 h-10 rounded-xl flex items-center justify-center hover:bg-blue-500 transition">
+            <i class="fa-solid fa-bag-shopping text-sm"></i>
+          </button>
+        </div>
+
+      </div>
+      <div class="w-[248px] p-5 rounded-2xl 
+bg-gradient-to-b from-[#0b0f1a] to-[#111827] 
+border border-blue-500/30 relative text-white">
+
+
+        <h3 class="text-[24px] text-start font-semibold leading-tight">Tesla</h3>
+        <p class="text-[16px] text-start text-gray-400">Model 3</p>
+
+
+        <img src="./imgs/featured2.svg" class="my-4 h-[120px] mx-auto object-contain" />
+
+
+
+        <div class="flex justify-between items-center mt-4">
+          <span class="text-[16px] font-semibold">$45,900</span>
+
+          <button
+            class="bg-blue-600 w-10 h-10 rounded-xl flex items-center justify-center hover:bg-blue-500 transition">
+            <i class="fa-solid fa-bag-shopping text-sm"></i>
+          </button>
+        </div>
+
+      </div>
+      <div class="w-[248px] p-5 rounded-2xl 
+bg-gradient-to-b from-[#0b0f1a] to-[#111827] 
+border border-blue-500/30 relative text-white">
+
+
+        <h3 class="text-[24px] text-start font-semibold leading-tight">Audi</h3>
+        <p class="text-[16px] text-start text-gray-400">E-tron</p>
+
+
+        <img src="./imgs/featured3.svg" class="my-4 h-[120px] mx-auto object-contain" />
+
+
+
+
+        <div class="flex justify-between items-center mt-4">
+          <span class="text-[16px] font-semibold">$175, 900</span>
+
+          <button
+            class="bg-blue-600 w-10 h-10 rounded-xl flex items-center justify-center hover:bg-blue-500 transition">
+            <i class="fa-solid fa-bag-shopping text-sm"></i>
+          </button>
+        </div>
+
+      </div>
+      <div class="w-[248px] p-5 rounded-2xl 
+bg-gradient-to-b from-[#0b0f1a] to-[#111827] 
+border border-blue-500/30 relative text-white">
+
+
+        <h3 class="text-[24px] text-start font-semibold leading-tight">Porsche</h3>
+        <p class="text-[16px] text-start text-gray-400">Boxster 987</p>
+
+
+        <img src="./imgs/featured5.svg" class="my-4 h-[120px] mx-auto object-contain" />
+
+
+
+
+        <div class="flex justify-between items-center mt-4">
+          <span class="text-[16px] font-semibold">$126,900</span>
+
+          <button
+            class="bg-blue-600 w-10 h-10 rounded-xl flex items-center justify-center hover:bg-blue-500 transition">
+            <i class="fa-solid fa-bag-shopping text-sm"></i>
+          </button>
+        </div>
+
+      </div>
+      <div class="w-[248px] p-5 rounded-2xl 
+bg-gradient-to-b from-[#0b0f1a] to-[#111827] 
+border border-blue-500/30 relative text-white">
+
+
+        <h3 class="text-[24px] text-start font-semibold leading-tight">Porsche</h3>
+        <p class="text-[16px] text-start text-gray-400">Panamera</p>
+
+
+        <img src="./imgs/featured6.svg" class="my-4 h-[120px] mx-auto object-contain" />
+
+
+        <div class="flex justify-between items-center mt-4">
+          <span class="text-[16px] font-semibold">$126,900</span>
+
+          <button
+            class="bg-blue-600 w-10 h-10 rounded-xl flex items-center justify-center hover:bg-blue-500 transition">
+            <i class="fa-solid fa-bag-shopping text-sm"></i>
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <section
+    class="flex flex-col md:flex-row items-center justify-center gap-10 md:gap-20 py-24 text-center md:text-left bg-gradient-to-b from-[rgba(10,10,11,0.2)] to-[rgba(10,10,11,0.5)]">
+
+    <div class="w-full max-w-md">
+      <h2 class="text-3xl font-semibold">
+        Do You Want To Receive Special Offers?
+      </h2>
+
+      <p class="mt-4 text-gray-400 text-sm">
+        Be the first to receive all the information about our products and new cars by email by subscribing to our
+        mailing
+        list.
+      </p>
+
+      <button class="mt-6 px-6 py-2 bg-blue-600 text-white rounded">
+        Subscribe Now
+      </button>
+    </div>
+
+    <img src="./imgs/imghre3.png" alt="" class="w-full max-w-md" />
+
+  </section>
+  <section class="flex flex-col items-center justify-center gap-[106px] md:flex-row   ">
+    <div class="flex gap-[106px]">
+      <img class="w-12.5 h-12.5" src="./imgs/svglogo.svg" alt="">
+      <img class="w-12.5 h-12.5" src="./imgs/svglogo.svg" alt="">
+      <img class="w-12.5 h-12.5" src="./imgs/svglgog2.png" alt="">
+    </div>
+    <div class="flex gap-[106px]">
+      <img class="w-12.5 h-12.5" src="./imgs/svglogo.svg" alt="">
+      <img class="w-12.5 h-12.5" src="./imgs/svglgog2.png" alt="">
+      <img class="w-12.5 h-12.5" src="./imgs/svglogo.svg" alt="">
+    </div>
+
+  </section>
+  <footer class="w-full flex justify-center items-center py-16">
+
+    <section class="w-full max-w-[1000px] flex flex-col md:flex-row justify-between items-start gap-10 px-5">
+
+
+      <div class="w-full md:w-40 flex flex-col gap-2 text-start">
+        <h2 class="text-lg flex items-center gap-2">
+          <img src="./src/image/rul.svg" alt="">
+          Elecar
+        </h2>
+
+        <p class="text-[13px] leading-[140%] text-[rgba(186,190,196,1)]">
+          We offer the best electric cars of the most recognized brands in the world.
+        </p>
+      </div>
+
+
+      <div class="flex flex-col gap-3 text-start">
+        <h4 class="text-[20px] text-[rgba(241,242,243,1)]">
+          Company
+        </h4>
+        <ul class="flex flex-col gap-2">
+          <li class="text-[16px] leading-[140%] text-[rgba(186,190,196,1)]">About</li>
+          <li class="text-[16px] leading-[140%] text-[rgba(186,190,196,1)]">Cars</li>
+          <li class="text-[16px] leading-[140%] text-[rgba(186,190,196,1)]">History</li>
+          <li class="text-[16px] leading-[140%] text-[rgba(186,190,196,1)]">Shop</li>
+        </ul>
+      </div>
+
+
+      <div class="flex flex-col gap-3 text-start">
+        <h4 class="text-[20px] text-[rgba(241,242,243,1)]">
+          Company
+        </h4>
+
+        <ul class="flex flex-col gap-2">
+          <li class="text-[16px] leading-[140%] text-[rgba(186,190,196,1)]">Request a quote</li>
+          <li class="text-[16px] leading-[140%] text-[rgba(186,190,196,1)]">Find a dealer</li>
+          <li class="text-[16px] leading-[140%] text-[rgba(186,190,196,1)]">Contact us</li>
+          <li class="text-[16px] leading-[140%] text-[rgba(186,190,196,1)]">Services</li>
+        </ul>
+      </div>
+
+
+      <div class="flex flex-col gap-3 text-start">
+        <h4 class="text-[20px] text-[rgba(241,242,243,1)]">
+          Follow us
+        </h4>
+
+        <div class="flex gap-3 ">
+          <img src="./src/image/ri_facebook-fill.svg" alt="">
+          <img src="./src/image/ri_instagram-line.svg" alt="">
+          <img src="./src/image/ri_twitter-line.svg" alt="">
+        </div>
+      </div>
+
+    </section>
+
+  </footer>
+  <p class=" text-center text-[13px]  loading-[140%] text-[rgba(186, 190, 196, 1)]">Bedimcode. All rights reserved</p>
+
+
+
+  
+
+</html>
+    </section>
+    <script>
+      const btn = document.getElementById("menuBtn");
+      const menu = document.getElementById("mobileMenu");
+      btn.onclick = () => menu.classList.toggle("hidden");
+    </script>
+  </body>
+</html>
